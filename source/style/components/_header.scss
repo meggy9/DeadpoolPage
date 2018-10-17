@@ -1,0 +1,215 @@
+.header-wrap {
+	display: flex;
+	justify-content: space-between;
+	min-height: 442px;
+	margin: 0 auto;
+	padding: 50px 80px;
+	color: #fff;
+	background: url(../images/header-poster.png) no-repeat;
+	background-position: center bottom; 
+	background-size: contain;
+
+	@include respond(tablet) {
+		min-height: 300px;
+	}
+
+	@media only screen and (max-width: 720px) {
+		padding: 50px 40px;
+	}
+
+	@include respond(phone) {
+		padding-top: 16px;
+	}
+}
+
+.movie__name {
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 99.2px;
+	margin-top: -24px;
+	margin-left: -3.2px;
+	color: #fff;
+
+	@include respond(tablet) {
+		font-size: 65px;
+	}
+
+	@include respond(phone) {
+		font-size: 40px;
+		margin-top: 0px;
+	}
+}
+
+.movie__year {
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 40px;
+	@include respond(tablet) {
+		font-size: 28px;
+	}
+}
+
+.movie__country {
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 40px;
+	@include respond(tablet) {
+		font-size: 28px;
+	}
+}
+
+.movie__age-limit {
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 40px;
+	color: $pink;
+	@include respond(tablet) {
+		font-size: 28px;
+	}
+}
+
+.header__right {
+	@include respond(tablet) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.logo__block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 1.8rem;
+	@include respond(tablet) {
+		display: none;
+	}
+}
+
+.logo-image {
+	margin-bottom: 0.1875rem;
+}
+
+.logo-name {
+	font-family: helvetica;
+	font-style: light;
+	color: $pink;
+	font-size: 2.5rem;
+}
+
+
+
+
+
+.menu__button{
+  width: 35px;
+  height: 30px;
+  margin: 10px 10px;
+  position: relative;
+  cursor: pointer;
+  z-index: 100;
+  display: none;
+  @include respond(tablet) {
+  	display: inline-block;
+  }
+
+  @media only screen and (max-width: 380px) {  
+		margin-right: -15px;
+  }
+
+  @include respond(phone) {
+		font-size: 40px;
+  }
+}
+.menu__button span{
+  background-color:#FFF;
+  position: absolute;
+  border-radius: 2px;
+  transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+  width:100%;
+  height: 4px;
+  transition-duration: 200ms
+}
+.menu__button span:nth-child(1){
+  top:0px;
+  left: 0px;
+}
+.menu__button span:nth-child(2){
+  top:13px;
+  left: 0px;
+}
+.menu__button span:nth-child(3){
+  bottom:0px;
+  left: 0px;
+}
+.menu__button:not(.clickMenuFive):hover span:nth-child(1){
+  transform: rotate(-3deg) scaleY(1.1);
+}
+.menu__button:not(.clickMenuFive):hover span:nth-child(2){
+  transform: rotate(3deg) scaleY(1.1);
+}
+.menu__button:not(.clickMenuFive):hover span:nth-child(3){
+  transform: rotate(-4deg) scaleY(1.1);
+}
+.clickMenuFive span:nth-child(1){
+  transform: rotate(45deg);
+  top: 13px;
+
+}
+.clickMenuFive span:nth-child(2){
+  transform: scale(.1);
+
+}
+.clickMenuFive span:nth-child(3){
+  transform: rotate(-45deg);
+  top: 13px;
+}
+
+.fixed-button {
+	position: fixed;
+	top: 50px;
+	right: 80px;
+
+	@media only screen and (max-width: 720px) {
+		right: 40px;
+	}
+
+	@media only screen and (max-width: 380px) {  
+		right: 45px;
+	}
+  
+	@include respond(phone) {
+		top: 16px;
+	}
+}
+
+
+
+
+
+.menu__page {
+	display: none;
+}
+
+.menu__list {
+	@include respond(tablet) {
+		display: none;
+	}
+}
+
+.menu__item:not(:last-child) {
+	margin-bottom: 0.25rem;
+}
+
+.menu__item_link {
+	display: block;
+	font-family: helvetica;
+	font-size: 1.125rem;
+	min-width: 165px;
+	background: $pink;
+	text-align: center;
+	padding: 0.125rem 2.65rem;
+	text-decoration: none;
+	color: #fff;
+
+	&:hover {
+		color: #cd7e17;
+	}
+}
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-wrap">
+        <div class="header__left">
+          <div class="movie__name">DEADPOOL</div>
+          <div class="movie__year">2016</div>
+          <div class="movie__country">USA</div>
+          <div class="movie__age-limit">18+</div>
+        </div>
+        <div class="header__right">
+          <div class="logo__block"><img class="logo-image" src="images/logo.png" alt="spike-logo"/>
+            <div class="logo-name">spike</div>
+          </div>
+          <div class="menu__button"><span></span><span></span><span></span></div>
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__item_link" href="#">Все кино</a></li>
+            <li class="menu__item"><a class="menu__item_link" href="#">Рейтинги</a></li>
+            <li class="menu__item"><a class="menu__item_link" href="#">Общение</a></li>
+            <li class="menu__item"><a class="menu__item_link" href="#">Войти</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <content class="content">
+      <div class="content-wrap">
+        <section class="description__block">
+          <div class="description"><img class="description__image" src="images/desc-image.png" alt=""/>
+            <p class="description__text">Уэйд Уилсон — наёмник. Будучи побочным продуктом программы вооружённых сил под названием «Оружие X», Уилсон приобрёл невероятную силу, проворство и способность к исцелению. Но страшной ценой: его клеточная структура постоянно меняется, а здравомыслие сомнительно. Всё, чего Уилсон хочет, — это держаться на плаву в социальной выгребной яме. Но течение в ней слишком быстрое.</p>
+          </div>
+          <div class="reviews__block">
+            <p class="reviews__header">Рецензии:</p>
+            <ul class="reviews__list">
+              <li class="reviews__item"><span class="reviews__item_background positive"></span><span class="reviews__item_number positive">266</span><span class="reviews__item_type">положительных</span></li>
+              <li class="reviews__item"><span class="reviews__item_background neutral"></span><span class="reviews__item_number neutral">41</span><span class="reviews__item_type">нейтральная</span></li>
+              <li class="reviews__item"><span class="reviews__item_background negative"></span><span class="reviews__item_number negative">66</span><span class="reviews__item_type">отрицательных</span></li>
+            </ul>
+          </div>
+        </section>
+        <section class="trailer__block">
+          <div class="trailer__block_video" id="player"></div>
+          <div class="trailer__block_pause"><img class="trailer__block_pause-preloader" src="images/trailer-preloader.png"/><img class="trailer__block_pause-image" src="images/pause.png" alt="pause image"/></div>
+        </section>
+        <section class="slider__block">
+          <div class="slider__block_prev"></div>
+          <div class="slider__container">
+            <ul class="slider__container_list">
+              <li class="slider__container_item"><img src="images/slider/1.jpg"/></li>
+              <li class="slider__container_item"><img src="images/slider/2.jpg"/></li>
+              <li class="slider__container_item"><img src="images/slider/3.jpg"/></li>
+              <li class="slider__container_item"><img src="images/slider/4.jpg"/></li>
+              <li class="slider__container_item"><img src="images/slider/5.jpg"/></li>
+            </ul>
+          </div>
+          <div class="slider__block_next"></div>
+        </section>
+      </div>
+    </content>
+    <footer class="footer">
+      <div class="footer-wrap">
+        <div class="footer-links__list">
+          <div class="footer-links__item"><a class="footer-links__item-link" href="">Реклама</a></div>
+          <div class="footer-links__item"><a class="footer-links__item-link" href="">Условия использования</a></div>
+        </div>
+        <div class="footer-copyright" id="copyright">	&copy; 2003-2016 Spike</div>
+      </div>
+    </footer>
+    <div class="sidebar__menu">
+      <ul class="sidebar__menu_list">
+        <li class="sidebar__menu_item"><a class="sidebar__menu_item-link pulse" href="#">Все кино</a></li>
+        <li class="sidebar__menu_item"><a class="sidebar__menu_item-link pulse" href="#">Рейтинги</a></li>
+        <li class="sidebar__menu_item"><a class="sidebar__menu_item-link pulse" href="#">Общение</a></li>
+        <li class="sidebar__menu_item"><a class="sidebar__menu_item-link pulse" href="#">Войти</a></li>
+      </ul>
+    </div>
+  </div>
+</body>

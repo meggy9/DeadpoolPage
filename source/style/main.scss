@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+html {
+	font-size: 16px;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	padding: 0px 5px;
+}
+
+.wrapper {
+	min-height: 100%;
+	max-width: 81.19rem;
+	background: #000;
+	margin: 0 auto;
+	position: relative;
+	background-image: url(../images/bottom-image.png);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+
+
+@import 'fonts/fonts.scss';
+@import 'setup.scss';
+@import 'components/_header.scss';
+@import 'components/_content.scss';
+@import 'components/_footer.scss';
+@import 'components/_sidebar-menu.scss';

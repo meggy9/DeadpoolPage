@@ -1,0 +1,30 @@
+iframe(id="player" src="https://www.youtube.com/embed/57vTOdawe5w?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen).trailer__block_video
+					.trailer__block_pause
+						img(src="images/trailer-preloader.png").trailer__block_pause-preloader
+						img(src="images/pause.png" alt="pause image").trailer__block_pause-image
+
+
+
+
+var player;
+    
+    function onYouTubeIframeAPIReady() {
+        
+        if(typeof YT.Player !== "undefined") {
+        	player = new YT.Player('player', {
+        		height: '360',
+    			width: '640',
+        		videoId: '57vTOdawe5w',
+        		events: {
+        			
+        		}
+        	});
+        	console.log(player);
+        }
+        else {
+        	setTimeout(onYouTubeIframeAPIReady, 1);
+        	console.log("still undefined");
+    	}	
+    };
+
+    onYouTubeIframeAPIReady;

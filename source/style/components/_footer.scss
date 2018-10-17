@@ -1,0 +1,42 @@
+.footer {
+	color: $footer-text-color;
+	font-family: helvetica;
+	font-size: 14px;
+}
+
+.footer-wrap {
+	display: flex;
+	justify-content: flex-end;
+	max-width: 750px;
+	margin: 0 auto;
+	z-index: -1;
+	padding: 22px 0px;
+
+	@include respond(tablet) {
+		max-width: 550px;
+	}
+
+	@include respond(phone) {
+		padding: 22px 20px;
+	}
+}
+
+.footer-links__list {
+	display: flex;
+
+	@include respond(phone) {
+		flex-wrap: wrap;
+	}
+}
+
+.footer-links__item {
+	margin-right: 18px;
+}
+
+.footer-links__item-link {
+	color: $footer-text-color;
+
+	&:hover {
+		color: #cd7e17;
+	}
+}

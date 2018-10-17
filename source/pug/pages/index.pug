@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	meta(name="viewport", content="width=device-width, initial-scale=1.0")
+	link(rel="stylesheet", href="css/main.css")
+	link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One")
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+	script(src="js/main.js")
+
+	title Document
+body
+	.wrapper
+		header.header
+			.header-wrap
+				.header__left
+					.movie__name
+						| DEADPOOL
+					.movie__year
+						| 2016
+					.movie__country
+						| USA
+					.movie__age-limit
+						| 18+
+				.header__right
+					.logo__block
+						img(src="images/logo.png" alt="spike-logo").logo-image
+						.logo-name
+							| spike
+					.menu__button
+						span
+						span
+						span
+					ul.menu__list
+						li.menu__item
+							a(href="#").menu__item_link
+								| Все кино
+						li.menu__item
+							a(href="#").menu__item_link
+								| Рейтинги
+						li.menu__item
+							a(href="#").menu__item_link
+								| Общение
+						li.menu__item
+							a(href="#").menu__item_link
+								| Войти
+		content.content
+			.content-wrap
+				section.description__block
+					.description
+						img(src="images/desc-image.png" alt="").description__image
+						p.description__text
+							| Уэйд Уилсон — наёмник. Будучи побочным продуктом программы вооружённых сил под названием «Оружие X», Уилсон приобрёл невероятную силу, проворство и способность к исцелению. Но страшной ценой: его клеточная структура постоянно меняется, а здравомыслие сомнительно. Всё, чего Уилсон хочет, — это держаться на плаву в социальной выгребной яме. Но течение в ней слишком быстрое.
+					.reviews__block
+						p.reviews__header
+							| Рецензии:
+						ul.reviews__list
+							li.reviews__item
+								span.reviews__item_background.positive
+								span.reviews__item_number.positive
+									| 266
+								span.reviews__item_type
+									| положительных
+							li.reviews__item
+								span.reviews__item_background.neutral
+								span.reviews__item_number.neutral
+									| 41
+								span.reviews__item_type
+									| нейтральная
+							li.reviews__item
+								span.reviews__item_background.negative
+								span.reviews__item_number.negative
+									| 66
+								span.reviews__item_type
+									| отрицательных
+				section.trailer__block
+					div(id="player").trailer__block_video
+					.trailer__block_pause
+						img(src="images/trailer-preloader.png").trailer__block_pause-preloader
+						img(src="images/pause.png" alt="pause image").trailer__block_pause-image
+				section.slider__block
+					.slider__block_prev
+					.slider__container
+						ul.slider__container_list
+							li.slider__container_item
+								img(src="images/slider/1.jpg")
+							li.slider__container_item
+								img(src="images/slider/2.jpg")
+							li.slider__container_item
+								img(src="images/slider/3.jpg")
+							li.slider__container_item
+								img(src="images/slider/4.jpg")
+							li.slider__container_item
+								img(src="images/slider/5.jpg")
+					.slider__block_next
+		footer.footer
+			.footer-wrap
+				.footer-links__list
+					.footer-links__item
+						a(href="").footer-links__item-link
+							| Реклама
+					.footer-links__item
+						a(href="").footer-links__item-link
+							| Условия использования
+				div(id="copyright").footer-copyright
+					| 	&copy; 2003-2016 Spike
+		.sidebar__menu
+			ul.sidebar__menu_list
+				li.sidebar__menu_item
+					a(href="#").sidebar__menu_item-link.pulse
+						| Все кино
+				li.sidebar__menu_item
+					a(href="#").sidebar__menu_item-link.pulse
+						| Рейтинги
+				li.sidebar__menu_item
+					a(href="#").sidebar__menu_item-link.pulse
+						| Общение
+				li.sidebar__menu_item
+					a(href="#").sidebar__menu_item-link.pulse
+						| Войти
